@@ -21,5 +21,7 @@ public class RetailnightmareModTabs {
 				tabData.accept(RetailnightmareModItems.BOX.get());
 				tabData.accept(RetailnightmareModBlocks.PACKAGER.get().asItem());
 				tabData.accept(RetailnightmareModItems.MOP_BUCKET_SPAWN.get());
+				tabData.accept(RetailnightmareModBlocks.DUST.get().asItem());
+				tabData.accept(RetailnightmareModItems.DUSTER.get());
 			}).build());
 }

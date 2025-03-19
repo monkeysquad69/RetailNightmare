@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/basalt_side",
+    "up": "minecraft:block/basalt_side",
+    "north": "minecraft:block/basalt_side",
+    "east": "minecraft:block/basalt_side",
+    "south": "minecraft:block/basalt_side",
+    "west": "minecraft:block/basalt_side",
+    "particle": "minecraft:block/basalt_side"
+  },
+  "render_type": "solid"
+}

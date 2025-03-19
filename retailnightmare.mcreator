@@ -28,8 +28,8 @@
       "registry_name": "box",
       "metadata": {
         "files": [
-          "src/main/resources/assets/retailnightmare/models/item/box.json",
-          "src/main/java/net/monkeysquad/retailnightmare/item/BoxItem.java"
+          "src/main/java/net/monkeysquad/retailnightmare/item/BoxItem.java",
+          "src/main/resources/assets/retailnightmare/models/item/box.json"
         ]
       },
       "path": "~/Stocker/Box"
@@ -53,8 +53,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/monkeysquad/retailnightmare/world/inventory/PackagerGUIMenu.java",
-          "src/main/java/net/monkeysquad/retailnightmare/client/gui/PackagerGUIScreen.java",
-          "src/main/java/net/monkeysquad/retailnightmare/network/PackagerGUIButtonMessage.java"
+          "src/main/java/net/monkeysquad/retailnightmare/network/PackagerGUIButtonMessage.java",
+          "src/main/java/net/monkeysquad/retailnightmare/client/gui/PackagerGUIScreen.java"
         ]
       },
       "path": "~/Stocker/Box"
@@ -68,9 +68,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/retailnightmare/blockstates/packager.json",
+          "src/main/java/net/monkeysquad/retailnightmare/block/entity/PackagerBlockEntity.java",
           "src/main/resources/data/retailnightmare/loot_table/blocks/packager.json",
           "src/main/resources/assets/retailnightmare/models/item/packager.json",
-          "src/main/java/net/monkeysquad/retailnightmare/block/entity/PackagerBlockEntity.java",
           "src/main/java/net/monkeysquad/retailnightmare/block/PackagerBlock.java",
           "src/main/resources/assets/retailnightmare/models/block/packager.json"
         ]
@@ -228,6 +228,68 @@
         ]
       },
       "path": "~/janitor/broom"
+    },
+    {
+      "name": "Dust",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/retailnightmare/loot_table/blocks/dust.json",
+          "src/main/resources/assets/retailnightmare/models/item/dust.json",
+          "src/main/java/net/monkeysquad/retailnightmare/block/DustBlock.java",
+          "src/main/resources/assets/retailnightmare/models/block/dust.json",
+          "src/main/resources/assets/retailnightmare/blockstates/dust.json"
+        ]
+      },
+      "path": "~/janitor/broom"
+    },
+    {
+      "name": "DusterRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "duster_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/retailnightmare/procedures/DusterRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/janitor/broom"
+    },
+    {
+      "name": "Duster",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "duster",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/retailnightmare/item/DusterItem.java",
+          "src/main/resources/assets/retailnightmare/models/item/duster.json"
+        ]
+      },
+      "path": "~/janitor/broom"
     }
   ],
   "variable_elements": [],
@@ -247,9 +309,11 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "block.retailnightmare.dust": "Dust",
       "gui.retailnightmare.packager_gui.button_pack": "Pack",
       "gui.retailnightmare.packager_gui.label_packager": "Packager",
       "item.retailnightmare.mop_bucket_spawn": "Mop Bucket Spawn",
+      "item.retailnightmare.duster": "Duster",
       "block.retailnightmare.packager": "Packager",
       "entity.retailnightmare.mop_bucket": "Mop Bucket",
       "item_group.retailnightmare.retail_nightmare": "Retail Nightmare",
