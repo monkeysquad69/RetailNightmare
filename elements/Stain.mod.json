@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "dust:default",
+    "customModelName": "stain:default",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,

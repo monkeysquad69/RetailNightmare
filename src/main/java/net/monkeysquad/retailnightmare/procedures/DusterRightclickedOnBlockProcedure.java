@@ -13,7 +13,7 @@ public class DusterRightclickedOnBlockProcedure {
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == RetailnightmareModBlocks.DUST.get()) {
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = Blocks.MANGROVE_LOG.defaultBlockState();
+				BlockState _bs = Blocks.AIR.defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Property<?> _propertyOld : _bso.getProperties()) {
 					Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());

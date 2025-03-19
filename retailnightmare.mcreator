@@ -300,10 +300,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/retailnightmare/blockstates/puddle.json",
-          "src/main/resources/assets/retailnightmare/models/item/puddle.json",
-          "src/main/resources/assets/retailnightmare/models/block/puddle.json",
           "src/main/java/net/monkeysquad/retailnightmare/block/PuddleBlock.java",
-          "src/main/resources/data/retailnightmare/loot_table/blocks/puddle.json"
+          "src/main/resources/data/retailnightmare/loot_table/blocks/puddle.json",
+          "src/main/resources/assets/retailnightmare/models/item/puddle.json",
+          "src/main/resources/assets/retailnightmare/models/block/puddle.json"
         ]
       },
       "path": "~/janitor/broom"
@@ -316,11 +316,11 @@
       "registry_name": "stain",
       "metadata": {
         "files": [
-          "src/main/resources/assets/retailnightmare/models/item/stain.json",
-          "src/main/resources/data/retailnightmare/loot_table/blocks/stain.json",
-          "src/main/resources/assets/retailnightmare/blockstates/stain.json",
           "src/main/java/net/monkeysquad/retailnightmare/block/StainBlock.java",
-          "src/main/resources/assets/retailnightmare/models/block/stain.json"
+          "src/main/resources/data/retailnightmare/loot_table/blocks/stain.json",
+          "src/main/resources/assets/retailnightmare/models/item/stain.json",
+          "src/main/resources/assets/retailnightmare/models/block/stain.json",
+          "src/main/resources/assets/retailnightmare/blockstates/stain.json"
         ]
       },
       "path": "~/janitor/broom"
