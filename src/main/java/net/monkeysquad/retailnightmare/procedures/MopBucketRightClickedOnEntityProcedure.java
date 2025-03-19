@@ -11,7 +11,7 @@ public class MopBucketRightClickedOnEntityProcedure {
 		if (!((entity instanceof MopBucketEntity _datEntS ? _datEntS.getEntityData().get(MopBucketEntity.DATA_follows) : "").equals(sourceentity.getStringUUID()))) {
 			if (entity instanceof MopBucketEntity _datEntSetS)
 				_datEntSetS.getEntityData().set(MopBucketEntity.DATA_follows, (sourceentity.getStringUUID()));
-		} else if (entity.isShiftKeyDown()) {
+		} else if (sourceentity.isShiftKeyDown()) {
 			if (entity instanceof MopBucketEntity _datEntSetS)
 				_datEntSetS.getEntityData().set(MopBucketEntity.DATA_follows, "no one");
 		}

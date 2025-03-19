@@ -27,6 +27,7 @@ public class PackingProcedure {
 			return;
 		ItemStack box = ItemStack.EMPTY;
 		double i = 0;
+		boolean packed = false;
 		box = new ItemStack(RetailnightmareModItems.BOX.get()).copy();
 		i = 0;
 		for (int index0 = 0; index0 < 3; index0++) {
@@ -67,13 +68,16 @@ public class PackingProcedure {
 					((Slot) _slots.get((int) i)).set(ItemStack.EMPTY);
 					_player.containerMenu.broadcastChanges();
 				}
+				packed = true;
 			}
 			i = i + 1;
 		}
-		if (world instanceof ServerLevel _level) {
-			ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, box);
-			entityToSpawn.setPickUpDelay(10);
-			_level.addFreshEntity(entityToSpawn);
+		if (packed) {
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1.5), z, box);
+				entityToSpawn.setPickUpDelay(10);
+				_level.addFreshEntity(entityToSpawn);
+			}
 		}
 	}
 }

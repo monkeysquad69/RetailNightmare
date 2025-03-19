@@ -20,5 +20,6 @@ public class RetailnightmareModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.retailnightmare.retail_nightmare")).icon(() -> new ItemStack(RetailnightmareModItems.BOX.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(RetailnightmareModItems.BOX.get());
 				tabData.accept(RetailnightmareModBlocks.PACKAGER.get().asItem());
+				tabData.accept(RetailnightmareModItems.MOP_BUCKET_SPAWN.get());
 			}).build());
 }

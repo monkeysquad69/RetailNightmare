@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "retailnightmare:custom/box",
   "textures": {
-    "layer0": "retailnightmare:item/cardboard_box"
+    "0": "retailnightmare:block/cardboard_box",
+    "particle": "retailnightmare:item/cardboard_box"
   }
 }

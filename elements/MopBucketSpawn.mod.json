@@ -9,7 +9,11 @@
     "states": [],
     "name": "Mop Bucket Spawn",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:RetailNightmare"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
