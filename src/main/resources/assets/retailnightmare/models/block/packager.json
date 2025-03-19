@@ -1,0 +1,9 @@
+{
+  "parent": "retailnightmare:custom/box_packager",
+  "textures": {
+    "all": "retailnightmare:block/box_packager",
+    "particle": "retailnightmare:block/box_packager",
+    "0": "retailnightmare:block/box_packager"
+  },
+  "render_type": "solid"
+}

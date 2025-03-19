@@ -1,11 +1,130 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "BoxSpecialInformation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "box_special_information",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/monkeysquad/retailnightmare/procedures/BoxSpecialInformationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Stocker/Box"
+    },
+    {
+      "name": "Box",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "box",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/retailnightmare/models/item/box.json",
+          "src/main/java/net/monkeysquad/retailnightmare/item/BoxItem.java"
+        ]
+      },
+      "path": "~/Stocker/Box"
+    },
+    {
+      "name": "RetailNightmare",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "retail_nightmare",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "PackagerGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "packager_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/retailnightmare/world/inventory/PackagerGUIMenu.java",
+          "src/main/java/net/monkeysquad/retailnightmare/client/gui/PackagerGUIScreen.java",
+          "src/main/java/net/monkeysquad/retailnightmare/network/PackagerGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/Stocker/Box"
+    },
+    {
+      "name": "Packager",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "packager",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/retailnightmare/blockstates/packager.json",
+          "src/main/resources/data/retailnightmare/loot_table/blocks/packager.json",
+          "src/main/resources/assets/retailnightmare/models/item/packager.json",
+          "src/main/java/net/monkeysquad/retailnightmare/block/entity/PackagerBlockEntity.java",
+          "src/main/java/net/monkeysquad/retailnightmare/block/PackagerBlock.java",
+          "src/main/resources/assets/retailnightmare/models/block/packager.json"
+        ]
+      },
+      "path": "~/Stocker/Box"
+    },
+    {
+      "name": "Packing",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "packing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/retailnightmare/procedures/PackingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stocker/Box"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "gui.retailnightmare.packager_gui.button_pack": "Pack",
+      "gui.retailnightmare.packager_gui.label_packager": "Packager",
+      "block.retailnightmare.packager": "Packager",
+      "item_group.retailnightmare.retail_nightmare": "Retail Nightmare",
+      "item.retailnightmare.box": "Box"
+    }
   },
   "foldersRoot": {
     "name": "~",

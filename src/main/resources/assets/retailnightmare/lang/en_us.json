@@ -1,1 +1,7 @@
-{}
+{
+  "gui.retailnightmare.packager_gui.button_pack": "Pack",
+  "gui.retailnightmare.packager_gui.label_packager": "Packager",
+  "block.retailnightmare.packager": "Packager",
+  "item_group.retailnightmare.retail_nightmare": "Retail Nightmare",
+  "item.retailnightmare.box": "Box"
+}

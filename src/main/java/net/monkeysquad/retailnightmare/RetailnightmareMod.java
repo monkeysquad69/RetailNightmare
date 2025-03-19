@@ -13,6 +13,12 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.IEventBus;
 
+import net.monkeysquad.retailnightmare.init.RetailnightmareModTabs;
+import net.monkeysquad.retailnightmare.init.RetailnightmareModMenus;
+import net.monkeysquad.retailnightmare.init.RetailnightmareModItems;
+import net.monkeysquad.retailnightmare.init.RetailnightmareModBlocks;
+import net.monkeysquad.retailnightmare.init.RetailnightmareModBlockEntities;
+
 import net.minecraft.util.Tuple;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
@@ -35,6 +41,14 @@ public class RetailnightmareMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+
+		RetailnightmareModBlocks.REGISTRY.register(modEventBus);
+		RetailnightmareModBlockEntities.REGISTRY.register(modEventBus);
+		RetailnightmareModItems.REGISTRY.register(modEventBus);
+
+		RetailnightmareModTabs.REGISTRY.register(modEventBus);
+
+		RetailnightmareModMenus.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init
