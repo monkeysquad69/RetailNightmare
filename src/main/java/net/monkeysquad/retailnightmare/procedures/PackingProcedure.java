@@ -86,7 +86,7 @@ public class PackingProcedure {
 				}
 			}
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.ASH, x, y, z, 15, 0.25, 0.25, 0.25, 0.01);
+				_level.sendParticles(ParticleTypes.END_ROD, (x + 0.5), (y + 1), (z + 0.5), 15, 0.25, 0.25, 0.25, 0.01);
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1.5), z, box);
 				entityToSpawn.setPickUpDelay(10);
@@ -101,7 +101,9 @@ public class PackingProcedure {
 				}
 			}
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.SMALL_FLAME, x, y, z, 15, 0.25, 0.25, 0.25, 0.01);
+				_level.sendParticles(ParticleTypes.ELECTRIC_SPARK, (x + 0.5), (y + 1), (z + 0.5), 15, 0.25, 0.25, 0.25, 0.01);
 		}
+		if (entity instanceof Player _player)
+			_player.closeContainer();
 	}
 }
