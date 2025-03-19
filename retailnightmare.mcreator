@@ -183,20 +183,78 @@
         ]
       },
       "path": "~/janitor/broom"
+    },
+    {
+      "name": "MopBucketSpawnRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mop_bucket_spawn_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/retailnightmare/procedures/MopBucketSpawnRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/janitor/broom"
+    },
+    {
+      "name": "MopBucketSpawn",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mop_bucket_spawn",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/retailnightmare/models/item/mop_bucket_spawn.json",
+          "src/main/java/net/monkeysquad/retailnightmare/item/MopBucketSpawnItem.java"
+        ]
+      },
+      "path": "~/janitor/broom"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "mop_bucket_rolls",
+      "files": [
+        "mop_bucket_step1",
+        "mop_bucket_step2",
+        "mop_bucket_step3"
+      ],
+      "category": "neutral",
+      "subtitle": "Mop Bucket Rolls"
+    }
+  ],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "gui.retailnightmare.packager_gui.button_pack": "Pack",
       "gui.retailnightmare.packager_gui.label_packager": "Packager",
+      "item.retailnightmare.mop_bucket_spawn": "Mop Bucket Spawn",
       "block.retailnightmare.packager": "Packager",
       "entity.retailnightmare.mop_bucket": "Mop Bucket",
       "item_group.retailnightmare.retail_nightmare": "Retail Nightmare",
-      "item.retailnightmare.box": "Box"
+      "item.retailnightmare.box": "Box",
+      "subtitles.mop_bucket_rolls": "Mop Bucket Rolls"
     }
   },
   "foldersRoot": {

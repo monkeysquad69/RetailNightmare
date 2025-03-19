@@ -1,8 +1,10 @@
 {
   "gui.retailnightmare.packager_gui.button_pack": "Pack",
   "gui.retailnightmare.packager_gui.label_packager": "Packager",
+  "item.retailnightmare.mop_bucket_spawn": "Mop Bucket Spawn",
   "block.retailnightmare.packager": "Packager",
   "entity.retailnightmare.mop_bucket": "Mop Bucket",
   "item_group.retailnightmare.retail_nightmare": "Retail Nightmare",
-  "item.retailnightmare.box": "Box"
+  "item.retailnightmare.box": "Box",
+  "subtitles.mop_bucket_rolls": "Mop Bucket Rolls"
 }

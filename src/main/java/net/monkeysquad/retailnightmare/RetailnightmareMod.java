@@ -14,6 +14,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.IEventBus;
 
 import net.monkeysquad.retailnightmare.init.RetailnightmareModTabs;
+import net.monkeysquad.retailnightmare.init.RetailnightmareModSounds;
 import net.monkeysquad.retailnightmare.init.RetailnightmareModMenus;
 import net.monkeysquad.retailnightmare.init.RetailnightmareModItems;
 import net.monkeysquad.retailnightmare.init.RetailnightmareModEntities;
@@ -42,7 +43,7 @@ public class RetailnightmareMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
-
+		RetailnightmareModSounds.REGISTRY.register(modEventBus);
 		RetailnightmareModBlocks.REGISTRY.register(modEventBus);
 		RetailnightmareModBlockEntities.REGISTRY.register(modEventBus);
 		RetailnightmareModItems.REGISTRY.register(modEventBus);

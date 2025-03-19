@@ -1,0 +1,19 @@
+{
+  "mop_bucket_rolls": {
+    "subtitle": "subtitles.mop_bucket_rolls",
+    "sounds": [
+      {
+        "name": "retailnightmare:mop_bucket_step1",
+        "stream": false
+      },
+      {
+        "name": "retailnightmare:mop_bucket_step2",
+        "stream": false
+      },
+      {
+        "name": "retailnightmare:mop_bucket_step3",
+        "stream": false
+      }
+    ]
+  }
+}

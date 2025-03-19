@@ -8,6 +8,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
+import net.monkeysquad.retailnightmare.item.MopBucketSpawnItem;
 import net.monkeysquad.retailnightmare.item.BoxItem;
 import net.monkeysquad.retailnightmare.RetailnightmareMod;
 
@@ -19,6 +20,7 @@ public class RetailnightmareModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(RetailnightmareMod.MODID);
 	public static final DeferredItem<Item> BOX = REGISTRY.register("box", BoxItem::new);
 	public static final DeferredItem<Item> PACKAGER = block(RetailnightmareModBlocks.PACKAGER);
+	public static final DeferredItem<Item> MOP_BUCKET_SPAWN = REGISTRY.register("mop_bucket_spawn", MopBucketSpawnItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
