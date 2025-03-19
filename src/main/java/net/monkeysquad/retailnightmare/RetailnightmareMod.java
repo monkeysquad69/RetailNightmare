@@ -16,6 +16,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.monkeysquad.retailnightmare.init.RetailnightmareModTabs;
 import net.monkeysquad.retailnightmare.init.RetailnightmareModMenus;
 import net.monkeysquad.retailnightmare.init.RetailnightmareModItems;
+import net.monkeysquad.retailnightmare.init.RetailnightmareModEntities;
 import net.monkeysquad.retailnightmare.init.RetailnightmareModBlocks;
 import net.monkeysquad.retailnightmare.init.RetailnightmareModBlockEntities;
 
@@ -45,7 +46,7 @@ public class RetailnightmareMod {
 		RetailnightmareModBlocks.REGISTRY.register(modEventBus);
 		RetailnightmareModBlockEntities.REGISTRY.register(modEventBus);
 		RetailnightmareModItems.REGISTRY.register(modEventBus);
-
+		RetailnightmareModEntities.REGISTRY.register(modEventBus);
 		RetailnightmareModTabs.REGISTRY.register(modEventBus);
 
 		RetailnightmareModMenus.REGISTRY.register(modEventBus);

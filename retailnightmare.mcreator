@@ -111,6 +111,78 @@
         ]
       },
       "path": "~/Stocker/Box"
+    },
+    {
+      "name": "MopBucket",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mop_bucket",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/retailnightmare/entity/MopBucketEntity.java",
+          "src/main/java/net/monkeysquad/retailnightmare/client/renderer/MopBucketRenderer.java"
+        ]
+      },
+      "path": "~/janitor/broom"
+    },
+    {
+      "name": "MopBucketRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mop_bucket_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/retailnightmare/procedures/MopBucketRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/janitor/broom"
+    },
+    {
+      "name": "MopBucketOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mop_bucket_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/retailnightmare/procedures/MopBucketOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/janitor/broom"
     }
   ],
   "variable_elements": [],
@@ -122,6 +194,7 @@
       "gui.retailnightmare.packager_gui.button_pack": "Pack",
       "gui.retailnightmare.packager_gui.label_packager": "Packager",
       "block.retailnightmare.packager": "Packager",
+      "entity.retailnightmare.mop_bucket": "Mop Bucket",
       "item_group.retailnightmare.retail_nightmare": "Retail Nightmare",
       "item.retailnightmare.box": "Box"
     }
@@ -134,6 +207,15 @@
         "children": [
           {
             "name": "Box",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "janitor",
+        "children": [
+          {
+            "name": "broom",
             "children": []
           }
         ]
