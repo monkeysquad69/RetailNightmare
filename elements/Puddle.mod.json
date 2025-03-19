@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "dust",
+    "texture": "puddle",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Dust",
+    "name": "puddle",
     "specialInformation": {
       "fixedValue": []
     },
@@ -82,24 +82,24 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "isCustomSoundType": false,
+    "isCustomSoundType": true,
     "soundOnStep": {
       "value": "EMPTY"
     },
     "breakSound": {
-      "value": ""
+      "value": "block.pointed_dripstone.drip_water"
     },
     "fallSound": {
-      "value": ""
+      "value": "block.pointed_dripstone.drip_water"
     },
     "hitSound": {
-      "value": ""
+      "value": "block.pointed_dripstone.drip_water"
     },
     "placeSound": {
-      "value": ""
+      "value": "block.pointed_dripstone.drip_water"
     },
     "stepSound": {
-      "value": ""
+      "value": "block.pointed_dripstone.drip_water"
     },
     "luminance": 0,
     "unbreakable": false,

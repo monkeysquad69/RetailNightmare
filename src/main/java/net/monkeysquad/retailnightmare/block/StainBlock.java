@@ -11,9 +11,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
-public class DustBlock extends Block {
-	public DustBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.EMPTY).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+public class StainBlock extends Block {
+	public StainBlock() {
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

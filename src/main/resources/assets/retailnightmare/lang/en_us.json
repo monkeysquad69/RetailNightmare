@@ -1,12 +1,14 @@
 {
-  "block.retailnightmare.dust": "Dust",
   "gui.retailnightmare.packager_gui.button_pack": "Pack",
   "gui.retailnightmare.packager_gui.label_packager": "Packager",
   "item.retailnightmare.mop_bucket_spawn": "Mop Bucket Spawn",
+  "block.retailnightmare.puddle": "puddle",
+  "subtitles.mop_bucket_rolls": "Mop Bucket Rolls",
+  "block.retailnightmare.dust": "Dust",
   "item.retailnightmare.duster": "Duster",
   "block.retailnightmare.packager": "Packager",
   "entity.retailnightmare.mop_bucket": "Mop Bucket",
+  "block.retailnightmare.stain": "stain",
   "item_group.retailnightmare.retail_nightmare": "Retail Nightmare",
-  "item.retailnightmare.box": "Box",
-  "subtitles.mop_bucket_rolls": "Mop Bucket Rolls"
+  "item.retailnightmare.box": "Box"
 }

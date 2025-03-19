@@ -24,6 +24,8 @@ public class RetailnightmareModItems {
 	public static final DeferredItem<Item> MOP_BUCKET_SPAWN = REGISTRY.register("mop_bucket_spawn", MopBucketSpawnItem::new);
 	public static final DeferredItem<Item> DUST = block(RetailnightmareModBlocks.DUST);
 	public static final DeferredItem<Item> DUSTER = REGISTRY.register("duster", DusterItem::new);
+	public static final DeferredItem<Item> PUDDLE = block(RetailnightmareModBlocks.PUDDLE);
+	public static final DeferredItem<Item> STAIN = block(RetailnightmareModBlocks.STAIN);
 
 	// Start of user code block custom items
 	// End of user code block custom items

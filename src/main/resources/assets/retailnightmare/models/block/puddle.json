@@ -1,8 +1,8 @@
 {
   "parent": "retailnightmare:custom/dust",
   "textures": {
-    "all": "retailnightmare:block/dust",
-    "particle": "retailnightmare:block/dust",
+    "all": "retailnightmare:block/puddle",
+    "particle": "retailnightmare:block/puddle",
     "2": "retailnightmare:block/dust"
   },
   "render_type": "cutout"

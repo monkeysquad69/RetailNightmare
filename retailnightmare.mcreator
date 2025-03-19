@@ -28,8 +28,8 @@
       "registry_name": "box",
       "metadata": {
         "files": [
-          "src/main/java/net/monkeysquad/retailnightmare/item/BoxItem.java",
-          "src/main/resources/assets/retailnightmare/models/item/box.json"
+          "src/main/resources/assets/retailnightmare/models/item/box.json",
+          "src/main/java/net/monkeysquad/retailnightmare/item/BoxItem.java"
         ]
       },
       "path": "~/Stocker/Box"
@@ -53,8 +53,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/monkeysquad/retailnightmare/world/inventory/PackagerGUIMenu.java",
-          "src/main/java/net/monkeysquad/retailnightmare/network/PackagerGUIButtonMessage.java",
-          "src/main/java/net/monkeysquad/retailnightmare/client/gui/PackagerGUIScreen.java"
+          "src/main/java/net/monkeysquad/retailnightmare/client/gui/PackagerGUIScreen.java",
+          "src/main/java/net/monkeysquad/retailnightmare/network/PackagerGUIButtonMessage.java"
         ]
       },
       "path": "~/Stocker/Box"
@@ -68,9 +68,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/retailnightmare/blockstates/packager.json",
-          "src/main/java/net/monkeysquad/retailnightmare/block/entity/PackagerBlockEntity.java",
           "src/main/resources/data/retailnightmare/loot_table/blocks/packager.json",
           "src/main/resources/assets/retailnightmare/models/item/packager.json",
+          "src/main/java/net/monkeysquad/retailnightmare/block/entity/PackagerBlockEntity.java",
           "src/main/java/net/monkeysquad/retailnightmare/block/PackagerBlock.java",
           "src/main/resources/assets/retailnightmare/models/block/packager.json"
         ]
@@ -237,11 +237,11 @@
       "registry_name": "dust",
       "metadata": {
         "files": [
+          "src/main/resources/assets/retailnightmare/blockstates/dust.json",
+          "src/main/resources/assets/retailnightmare/models/block/dust.json",
           "src/main/resources/data/retailnightmare/loot_table/blocks/dust.json",
           "src/main/resources/assets/retailnightmare/models/item/dust.json",
-          "src/main/java/net/monkeysquad/retailnightmare/block/DustBlock.java",
-          "src/main/resources/assets/retailnightmare/models/block/dust.json",
-          "src/main/resources/assets/retailnightmare/blockstates/dust.json"
+          "src/main/java/net/monkeysquad/retailnightmare/block/DustBlock.java"
         ]
       },
       "path": "~/janitor/broom"
@@ -290,6 +290,40 @@
         ]
       },
       "path": "~/janitor/broom"
+    },
+    {
+      "name": "Puddle",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "puddle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/retailnightmare/blockstates/puddle.json",
+          "src/main/resources/assets/retailnightmare/models/item/puddle.json",
+          "src/main/resources/assets/retailnightmare/models/block/puddle.json",
+          "src/main/java/net/monkeysquad/retailnightmare/block/PuddleBlock.java",
+          "src/main/resources/data/retailnightmare/loot_table/blocks/puddle.json"
+        ]
+      },
+      "path": "~/janitor/broom"
+    },
+    {
+      "name": "Stain",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stain",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/retailnightmare/models/item/stain.json",
+          "src/main/resources/data/retailnightmare/loot_table/blocks/stain.json",
+          "src/main/resources/assets/retailnightmare/blockstates/stain.json",
+          "src/main/java/net/monkeysquad/retailnightmare/block/StainBlock.java",
+          "src/main/resources/assets/retailnightmare/models/block/stain.json"
+        ]
+      },
+      "path": "~/janitor/broom"
     }
   ],
   "variable_elements": [],
@@ -309,16 +343,18 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "block.retailnightmare.dust": "Dust",
       "gui.retailnightmare.packager_gui.button_pack": "Pack",
       "gui.retailnightmare.packager_gui.label_packager": "Packager",
       "item.retailnightmare.mop_bucket_spawn": "Mop Bucket Spawn",
+      "block.retailnightmare.puddle": "puddle",
+      "subtitles.mop_bucket_rolls": "Mop Bucket Rolls",
+      "block.retailnightmare.dust": "Dust",
       "item.retailnightmare.duster": "Duster",
       "block.retailnightmare.packager": "Packager",
       "entity.retailnightmare.mop_bucket": "Mop Bucket",
+      "block.retailnightmare.stain": "stain",
       "item_group.retailnightmare.retail_nightmare": "Retail Nightmare",
-      "item.retailnightmare.box": "Box",
-      "subtitles.mop_bucket_rolls": "Mop Bucket Rolls"
+      "item.retailnightmare.box": "Box"
     }
   },
   "foldersRoot": {
