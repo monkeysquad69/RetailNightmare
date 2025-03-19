@@ -42,7 +42,7 @@ public class MopBucketOnEntityTickUpdateProcedure {
 			for (Entity entityiterator : new ArrayList<>(world.players())) {
 				if ((entity instanceof MopBucketEntity _datEntS ? _datEntS.getEntityData().get(MopBucketEntity.DATA_follows) : "").equals(entityiterator.getStringUUID())) {
 					if (entity instanceof Mob _entity)
-						_entity.getNavigation().moveTo((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 1.25);
+						_entity.getNavigation().moveTo((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 0.95);
 				}
 			}
 		}

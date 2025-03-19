@@ -5,5 +5,5 @@
     "particle": "retailnightmare:block/box_packager",
     "0": "retailnightmare:block/box_packager"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }
